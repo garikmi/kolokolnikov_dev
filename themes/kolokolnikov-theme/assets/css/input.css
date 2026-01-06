@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+.post-page {
+}
+
+.post-page h1 {
+    font-size: var(--text-6xl);
+    margin-top: 2rem;
+}
+
+.post-page h2 {
+    font-size: var(--text-5xl);
+    margin-top: 2rem;
+}
+
+.post-page h3 {
+    font-size: var(--text-4xl);
+    margin-top: 2rem;
+}
+
+.post-page h4 {
+    font-size: var(--text-3xl);
+    margin-top: 2rem;
+}
+
+.post-page h5 {
+    font-size: var(--text-2xl);
+    margin-top: 2rem;
+}
+
+.post-page h6 {
+    font-size: var(--text-xl);
+    margin-top: 2rem;
+}
+
+.post-page p {
+    margin-top: 1rem;
+}
+
+.post-page blockquote {
+    padding-left: 1rem;
+    border-inline-start: 0.1rem solid var(--color-stone-50);
+}
+
+.post-page hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.post-page img {
+    border-radius: var(--radius-xl);
+}
+
+.post-page .highlight {
+    border-radius: var(--radius-xl);
+    padding: 1rem;
+    background-color: var(--color-neutral-900);
+    border-color: var(--color-neutral-800);
+    border-width: 1px;
+}
+
+.post-page .highlight pre {
+    background-color: transparent !important;
+}
+
+p code {
+    border-radius: var(--radius-xl);
+    padding: 0.2rem 0.4rem;
+    background-color: var(--color-neutral-900);
+    border-color: var(--color-neutral-800);
+    border-width: 1px;
+}

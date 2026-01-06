@@ -1,0 +1,5 @@
+<!-- TODO: Center the navigation buttons with the logo. -->
+<div class="grid grid-cols-2 justify-between content-center">
+    <h1 class="text-xl italic hover:underline"><a href="/">{{ site.Title }}</a></h1>
+    {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+</div>

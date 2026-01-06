@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<head>
+    {{ partial "head.html" . }}
+</head>
+<body class="bg-neutral-950 text-stone-50 font-serif">
+    <div class="max-w-200 ml-auto mr-auto p-10">
+        <header>
+            {{ partial "header.html" . }}
+        </header>
+        <main class="mt-8">
+            {{ block "quote" . }}{{ end }}
+            {{ block "programs" . }}{{ end }}
+            {{ block "main" . }}{{ end }}
+        </main>
+        <footer class="mt-8">
+            {{ partial "footer.html" . }}
+        </footer>
+    </div>
+</body>
+</html>

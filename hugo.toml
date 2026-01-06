@@ -1,0 +1,4 @@
+baseURL = 'https://kolokolnikov.dev/'
+languageCode = 'en-us'
+title = 'kolokolnikov.dev'
+theme = 'kolokolnikov-theme'

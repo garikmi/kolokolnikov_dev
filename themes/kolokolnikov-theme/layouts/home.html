@@ -1,0 +1,40 @@
+{{ define "quote" }}
+    <section class="text-center italic">
+        <h2 class="mt-20">{{ .Content }}</h2>
+    </section>
+{{ end }}
+
+{{ define "programs" }}
+    <section class="text-center">
+        <h1 class="text-2xl mt-20 mb-10">Program Collection</h1>
+        <div class="max-w-100 ml-auto mr-auto grid grid-cols-3 justify-items-center">
+            <a class="text-center hover:underline" href="https://rednera.com/cmdbar">
+                <img class="mb-1" src="{{- (resources.Get "img/cmdbar.png").RelPermalink -}}" alt="macos program icon" width="80" height="80">
+                CmdBar
+            </a>
+            <a class="text-center hover:underline" href="https://rednera.com/grapp">
+                <img class="mb-1" src="{{- (resources.Get "img/grapp.png").RelPermalink -}}" alt="macos program icon" width="80" height="80">
+                Grapp
+            </a>
+            <a class="text-center hover:underline" href="https://rednera.com/caffeine">
+                <img class="mb-1" src="{{- (resources.Get "img/caffeine.png").RelPermalink -}}" alt="macos program icon" width="80" height="80">
+                Caffeine
+            </a>
+        </div>
+    </section>
+{{ end }}
+
+{{ define "main" }}
+    <section>
+        <h1 class="text-2xl text-center mt-20 mb-10">Recent Posts</h1>
+        {{ range site.RegularPages }}
+            <div class="mt-4 bg-neutral-900 rounded-2xl border border-neutral-800 p-4">
+                {{- /*<time datetime="{{ $dateMachine }}">{{ .Date.Format "2 Jan 2006" }}</time> time.Format "2006-01-02T15:04:05-07:00" */ -}}
+                <h2 class="text-xl font-medium hover:underline"><a href="{{ .RelPermalink }}">{{ .LinkTitle }} - {{ .Date.Format "2 Jan 2006" }}</a></h2>
+                <!-- <hr class="mt-2 mb-2 border-dashed bg-transparent"> -->
+                <!-- TODO: Remove the read more thing -->
+                <p class="mt-2">{{ .Summary | safeHTML | truncate 400 }}</p>
+            </div>
+        {{ end }}
+    </section>
+{{ end }}
