@@ -26,7 +26,9 @@
 
 {{ define "main" }}
     <section>
-        <h1 class="text-2xl text-center mt-20 mb-10">Recent Posts</h1>
+        {{ if gt (len .Site.RegularPages) 0 }}
+            <h1 class="text-2xl text-center mt-20 mb-10">Recent Posts</h1>
+        {{ end }}
         {{ range site.RegularPages }}
             <div class="mt-4 bg-neutral-900 rounded-2xl border border-neutral-800 p-4">
                 {{- /*<time datetime="{{ $dateMachine }}">{{ .Date.Format "2 Jan 2006" }}</time> time.Format "2006-01-02T15:04:05-07:00" */ -}}
