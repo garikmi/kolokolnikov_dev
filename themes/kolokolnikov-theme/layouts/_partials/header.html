@@ -1,5 +1,8 @@
 <!-- TODO: Center the navigation buttons with the logo. -->
-<div class="grid grid-cols-2 justify-between content-center">
+<div class="grid grid-cols-2 justify-between content-center items-center">
     <h1 class="text-xl italic hover:underline"><a href="/">{{ site.Title }}</a></h1>
+    <div class="text-base text-right">
+        <a class="hover:underline" href="https://github.com/garikmi" target="_blank">GitHub</a>
+    </div>
     {{- /* partial "menu.html" (dict "menuID" "main" "page" .) */ -}}
 </div>

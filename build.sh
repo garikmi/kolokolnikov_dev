@@ -22,7 +22,7 @@ else
     elif [ "$1" = "server" ]; then
         python_server
     elif [ "$1" = "css" ]; then
-        compile_css
+        compile_css "--minify"
     elif [ "$1" = "css-watch" ]; then
         compile_css "--watch"
     else
