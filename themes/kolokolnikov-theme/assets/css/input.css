@@ -49,6 +49,8 @@
 
 .post-page img {
     border-radius: var(--radius-xl);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .post-page .highlight {
@@ -69,4 +71,8 @@ p code {
     background-color: var(--color-neutral-900);
     border-color: var(--color-neutral-800);
     border-width: 1px;
+}
+
+.post-page a {
+    text-decoration: underline;
 }
