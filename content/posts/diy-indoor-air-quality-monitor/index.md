@@ -5,7 +5,15 @@ title = 'DIY Indoor Air Quality Monitor'
 summary = 'How I made made an indoor air quality monitor using Raspberry Pi and Sensirion sensors.'
 +++
 
-[How monitoring air quality so useful indoors. Affects health, mental, etc.]
+I have never given much tought to the quality of indoor air. My first
+introduction to the monitoring of indoor air was with Amazon Smart Air
+Quality Monitor, which absolutely sucked. For what it was worth, it was
+useful and inticed me to explore more. The information provided by the air
+quality monitors is useful because poor air quality can lead to health
+issues and lower productivity. Personally for me, I found the Carbon Dioxide
+measure to be the most important (which, unfortunately, the monitor from
+Amazon did not provide). It increases noticebly when I feel anxious and do
+exercise which gives a hint to increase ventiliation.
 
 ## The Problem
 
@@ -117,7 +125,7 @@ same functionality, called [CmdBar](https://cmdbar.rednera.com).
 #### Results
 
 This server has been reliably running and collecting data for almost two
-years, since {INSERT DATE}, 2024. The longest uninterrupted by electricity
+years, since March 11, 2024. The longest uninterrupted by electricity
 outages and accidentals disconnects uptime was over half a year. I am yet
 to sit down and do any sort of analysis on this data. However, at the time
 of writing this, I am not sure what use it may provide (compared to, say,
